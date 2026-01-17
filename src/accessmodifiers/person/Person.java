@@ -5,23 +5,40 @@ public class Person {
     String name;
     int age;
 
-    void printDetails() {
-        System.out.println(name + " " + age);
+    public Person() {
+//        this("Default name", 12);
     }
 
-    String getName() {
-        return name;
+    private Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    void setName(String name) {
+    Person(String name) {
         this.name = name;
     }
 
-    int getAge() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
         return age;
     }
 
-    void setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public void printDetail() {
+        System.out.println(name + " " + age);
+    }
+
+    public Person getDefaultPerson(){
+        return new Person("DefaultName", 12);
     }
 }

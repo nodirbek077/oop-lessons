@@ -5,6 +5,8 @@ public class Manager {
         Person person = new Person();
         person.name = "Eshmat";
         person.age = 30;
-        person.printDetails();
+        person.printDetail();
+
+        Person person3 = new Person("yolchi");
     }
 }

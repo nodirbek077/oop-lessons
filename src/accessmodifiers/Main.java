@@ -1,22 +1,25 @@
 package accessmodifiers;
 
 import accessmodifiers.person.Person;
-import accessmodifiers.test.TestCase;
 
 public class Main {
     public static void main(String[] args) {
-        Student student = new Student();
-        student.setName("Alish");
-        student.setAge(10);
-        student.printDetails();
+//        Student student = new Student();
+//        student.setName("Alish");
+//        student.setAge(10);
+//        student.printDetails();
 
         Person person = new Person();
-        person.name = "Alibek";
         person.setName("Valish");
         person.setAge(24);
-        person.printDetails();
+        person.printDetail();
 
-        TestCase testCase = new TestCase();
-        testCase.startTest();
+        Person person2 = person.getDefaultPerson();
+        person2.printDetail();
+
+        Person person3 = new Person("yolchi");
+
+//        TestCase testCase = new TestCase();
+//        testCase.startTest();
     }
 }
