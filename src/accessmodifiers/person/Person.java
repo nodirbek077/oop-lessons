@@ -1,26 +1,27 @@
 package accessmodifiers.person;
 
 public class Person {
-    private String name;
-    private int age;
+    //o'zgaruvchining hech qanday access modifier yozilmagan bo'lsa ham aslida default bo'ladi, methodda ham shu ahvol
+    String name;
+    int age;
 
-    public void printDetails() {
+    void printDetails() {
         System.out.println(name + " " + age);
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public int getAge() {
+    int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    void setAge(int age) {
         this.age = age;
     }
 }

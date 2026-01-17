@@ -11,6 +11,7 @@ public class Main {
         student.printDetails();
 
         Person person = new Person();
+        person.name = "Alibek";
         person.setName("Valish");
         person.setAge(24);
         person.printDetails();
