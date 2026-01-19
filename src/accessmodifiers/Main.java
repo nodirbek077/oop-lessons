@@ -17,7 +17,7 @@ public class Main {
         Person person2 = person.getDefaultPerson();
         person2.printDetail();
 
-        Person person3 = new Person("yolchi");
+//        Person person3 = new Person("yolchi");
 
 //        TestCase testCase = new TestCase();
 //        testCase.startTest();
