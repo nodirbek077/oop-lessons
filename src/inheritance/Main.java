@@ -11,6 +11,23 @@ public class Main {
         professor.setName("Vali");
         professor.setSurname("Valiyev");
         professor.setSubjectName("Java");
-        System.out.println(professor.getName() + " " + professor.getSurname() + " " + professor.getSubjectName());
+        professor.printDetail();
+//      System.out.println(professor.getName() + " " + professor.getSurname() + " " + professor.getSubjectName());
+
+        Student student = new Student();
+        student.setName("Toshmat");
+        student.setSurname("Toshmatov");
+        student.setLevel(4);
+        student.printDetail();
+        student.printLevel();
+
+        System.out.println();
+        Asistant asistant = new Asistant();
+        asistant.setName("Nurlan");
+        asistant.setSurname("Alimonov");
+        asistant.printDetail();
+        asistant.setLevel(4);
+        asistant.printLevel();
+        asistant.setProfessorName("Vali");
     }
 }
