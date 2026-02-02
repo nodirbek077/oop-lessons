@@ -10,6 +10,7 @@ public class Main {
         Professor professor = new Professor();
         professor.setName("Vali");
         professor.setSurname("Valiyev");
-        System.out.println(professor.getName() + " " + professor.getSurname());
+        professor.setSubjectName("Java");
+        System.out.println(professor.getName() + " " + professor.getSurname() + " " + professor.getSubjectName());
     }
 }
