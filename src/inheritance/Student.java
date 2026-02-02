@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Student extends Professor{
+public class Student extends Person{
     private Integer level;
 
     public void printLevel(){

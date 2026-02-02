@@ -2,7 +2,7 @@ package inheritance;
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person();
+        /*Person person = new Person();
         person.setName("Ali");
         person.setSurname("Aliyev");
         System.out.println(person.getName() + " " + person.getSurname());
@@ -28,6 +28,18 @@ public class Main {
         asistant.printDetail();
         asistant.setLevel(4);
         asistant.printLevel();
-        asistant.setProfessorName("Vali");
+        asistant.setProfessorName("Vali");*/
+
+        Object object = new Object();
+        Person person = new Person();
+        Professor professor = new Professor();
+        Student student = new Student();
+//        Asistant asistant = new Asistant();
+
+        System.out.println("object: " + object);
+        System.out.println("person: " + person.toString());
+        System.out.println("professor: " + professor.toString());
+        System.out.println("student: " + student.toString());
+//        System.out.println("assistant: " + asistant);
     }
 }
