@@ -50,5 +50,6 @@ public class Main {
 
         //inheritance with constructors (with parameters)
         Professor professor = new Professor();
+
     }
 }
