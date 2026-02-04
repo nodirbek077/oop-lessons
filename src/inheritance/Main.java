@@ -40,11 +40,15 @@ public class Main {
         System.out.println("person: " + person.toString());
         System.out.println("professor: " + professor.toString());
         System.out.println("student: " + student.toString());
-//        System.out.println("assistant: " + asistant);*/
+//      System.out.println("assistant: " + asistant);*/
 
-        //inheritance with constructors
+        //04.02.2026
+        //inheritance with constructors (without parameters)
 //        Person person = new Person();
 //        Object object = new Object();
+//        Professor professor = new Professor();
+
+        //inheritance with constructors (with parameters)
         Professor professor = new Professor();
     }
 }

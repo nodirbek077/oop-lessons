@@ -4,6 +4,7 @@ public class Professor extends Person {
     private String subjectName;
 
     public Professor() {
+        super();
         System.out.println("Professor");
     }
 

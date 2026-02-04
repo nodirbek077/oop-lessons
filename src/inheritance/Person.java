@@ -4,11 +4,16 @@ public class Person {
     private String name;
     private String surname;
 
-    public Person(){
-        System.out.println("Person");
+    public Person() {
+        super();
     }
 
-    public void walk(){
+//    public Person(String name) {
+//        this.name = name;
+//        System.out.println("Person");
+//    }
+
+    public void walk() {
         System.out.println("I am walking ...");
     }
 
