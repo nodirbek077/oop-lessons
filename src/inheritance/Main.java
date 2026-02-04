@@ -30,7 +30,7 @@ public class Main {
         asistant.printLevel();
         asistant.setProfessorName("Vali");*/
 
-        Object object = new Object();
+        /*Object object = new Object();
         Person person = new Person();
         Professor professor = new Professor();
         Student student = new Student();
@@ -40,6 +40,11 @@ public class Main {
         System.out.println("person: " + person.toString());
         System.out.println("professor: " + professor.toString());
         System.out.println("student: " + student.toString());
-//        System.out.println("assistant: " + asistant);
+//        System.out.println("assistant: " + asistant);*/
+
+        //inheritance with constructors
+//        Person person = new Person();
+//        Object object = new Object();
+        Professor professor = new Professor();
     }
 }

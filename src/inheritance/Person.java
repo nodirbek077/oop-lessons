@@ -4,6 +4,10 @@ public class Person {
     private String name;
     private String surname;
 
+    public Person(){
+        System.out.println("Person");
+    }
+
     public void walk(){
         System.out.println("I am walking ...");
     }
@@ -28,8 +32,8 @@ public class Person {
         this.surname = surname;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return "From person";
-    }
+    }*/
 }

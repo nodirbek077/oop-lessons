@@ -3,6 +3,10 @@ package inheritance;
 public class Professor extends Person {
     private String subjectName;
 
+    public Professor() {
+        System.out.println("Professor");
+    }
+
     public void startTeaching() {
         System.out.println("Lets start lesson.");
     }
