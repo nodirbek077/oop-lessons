@@ -52,7 +52,7 @@ public class Main {
         Professor professor = new Professor("Alish","Java");
         System.out.println(professor.getName());
         System.out.println(professor.getSubjectName());
-
+        System.out.println(professor.getDegree());
 
     }
 }
