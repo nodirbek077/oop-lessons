@@ -3,9 +3,9 @@ package inheritance;
 public class Professor extends Person {
     private String subjectName;
 
-    public Professor() {
-        super();
-        System.out.println("Professor");
+    public Professor(String name, String subjectName) {
+        super(name);
+        this.subjectName = subjectName;
     }
 
     public void startTeaching() {

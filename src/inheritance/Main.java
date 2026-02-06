@@ -49,7 +49,10 @@ public class Main {
 //        Professor professor = new Professor();
 
         //inheritance with constructors (with parameters)
-        Professor professor = new Professor();
+        Professor professor = new Professor("Alish","Java");
+        System.out.println(professor.getName());
+        System.out.println(professor.getSubjectName());
+
 
     }
 }

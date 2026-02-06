@@ -4,8 +4,9 @@ public class Person {
     private String name;
     private String surname;
 
-    public Person() {
+    public Person(String name) {
         super();
+        this.name = name;
     }
 
 //    public Person(String name) {
