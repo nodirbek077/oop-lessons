@@ -19,7 +19,11 @@ public class Professor extends Person {
     }
 
     public void startTeaching() {
-        System.out.println("Lets start lesson.");
+//        System.out.println("Lets start lesson.");
+        walk();
+        System.out.println(this);
+        super.walk();
+        System.out.println(super.getName());
     }
 
     @Override
