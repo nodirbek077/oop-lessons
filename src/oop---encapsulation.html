@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restful Api in Spring HelloWorld</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+    <style>
+        .code_pre {
+            border-radius: 6px;
+        }
+
+        .code_code {
+            padding-top: 10px;
+            padding-left: 10px
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <br>
+    <h1 class="text-center">Encapsulation</h1>
+    <p>Bu maqolada Java-da <code>Encapsulation</code> haqida gaplashamiz. </p>
+    <div style="text-align: center">
+        <img width="35%" src="https://api.dasturjon.uz/api/v1/attach/image/555d0e2a-68b5-411e-89a3-62e1bf9b5101"
+             alt="rasm">
+    </div>
+    <br>
+    <p><b>Encapsulation</b> - enkapsuliatsiya bu OOP ning 4ta prinsipidan bittasi. Qolgan 3tasi bular inheritance,
+        polymorphism, va abstraction. Bularni dars davomida o'rganamiz.</p>
+    <p><code>Encapsulation</code> - kapsulaga olish deb tarjima qilsak bo'ladi. Boshqa tarjimasi yo'q ekan.
+        Bori shu. Darslar davomida encapsulation (enkapsuliatsiya) deb ishlatib ketamiz. </p>
+    <p> Yaniy <code> Encapsulation </code> bu class o'zgaruvchilarini va shu o'zgaruvchilarga tegishli bo'lgan
+        metodlarni bog'lab bitta qilib ishlatish mexanizmi. <code> Enkapsuliatsiyada </code> class o'zgaruchilariga
+        to'gridan to'g'ri murojaat qilinmaydi. Class
+        o'zgaruvchilarini qiymatini olish yoki qiymatini o'zgartirish uchun shu classning maxsus getter va setter
+        metodlarini ishlatish kerak. </p>
+    <p><code> Enkapsuliatsiyaning </code> boshqa bitta tarifi bu - data hiding . Ya'ni class
+        o'zgaruvchilarini yashirish. To'g'ridan to'g'ri foydalanishni taqiqlash.</p>
+    <p><code> Enkapsuliatsiyaga </code> erishish uchun quyidagi ishlar bajariladi.</p>
+    <ul>
+        <li>1. <span style="color: #e03e2d;">private </span>o'zgaruvchilar yaratiladi.</li>
+        <li>2. Shu o'zgaruvchilarni qiymatini olish va o'zgartirish uchun <span style="color: #e03e2d;"> public getter/setter</span>
+            metodlar yaratiladi.
+        </li>
+    </ul>
+    <p>Bo'ldi shu bilan enkapsuliatsiyaga erishiladi.</p>
+    <p><code> Enkapsuliatsiya </code> inglizcha tarifi: Encapsulation in Java is a mechanism of wrapping
+        the data (variables) and code acting on the data (methods) together as a single unit.</p>
+    <p>Agar siz OOP da kode yozaman desangiz enkapsuliatsiyadan to'liq foydalanishingiz kerak.</p>
+    <br>
+    <hr>
+    <p><strong>Namuna</strong></p>
+    <pre><code class="java" data-highlight="true">public class Person {
+    private String name;
+    private String surname;
+    private Integer age;
+
+
+    public String getName() { return name; }
+
+    public void setName(String name) { this.name = name; }
+
+    public String getSurname() { return surname; }
+
+    public void setSurname(String surname) { this.surname = surname; }
+
+    public Integer getAge() { return age; }
+
+    public void setAge(Integer age) { this.age = age; }
+}
+</code></pre>
+    <br>
+    <p><code>Namunada</code>:  <b> Person </b> classiga e'tibor bering. Unda 3ta o'zgruvchi bor va
+        o'zgaruvchilarning barchasi <code> private </code> qilingan. Ya'ni o'zgaruvchilarni tashqaridan
+        murojaat qilib bo'lmaydi.</p>
+    <p>Class da har bir o'zgaruvchi uchun getter / setter metodlar yozilgan.</p>
+    <p><code> Getter </code> - metodi o'zgaruvchining qiymatini olish (o'qish) uchun ishlatiladi. Get -
+        qiymatini olish/o'qish deb tarjima qilsak bo'ladi.</p>
+    <p><code> Setter </code> - metodi o'zgaruvchiga qiymat berish uchun ishlatiladi. Set - o'rnatish/berish
+        deb tarjima qilinadi.</p>
+    <p>Qo'shimch </p>
+    <ul>
+        <li><code> setName(String name) </code> - metodi bu <span style="color: #e03e2d;">setter </span>metodi
+            deyiladi. <span style="color: #e03e2d;">Set Name </span>deyilyabdi. Ya'ni name o'zgaruvchisiga qiymat
+            berish uchun ishlatiladi. Metodga kelgan name bu yangi qiymat.<br><span
+                    style="color: #2dc26b;">this.name</span> = <span style="color: #843fa1;">name  </span>deb :
+            <ul>
+                <li><span style="color: #2dc26b;">this.name</span> - bu shu classdagi global name
+                    o'zgaruvchisi nazarda tutilgan.
+                </li>
+                <li> = <span style="color: #843fa1;">name  </span>- bu metodga kelgan name o'zgaruvchisi.
+                    Ya'ni yangi qiymat.
+                </li>
+            </ul>
+        </li>
+        <li><span style="color: #e03e2d;"><code> getName() </code> </span>- metodi name o'zgaruvchisining
+            qiymatini return qiladi. Shu sabadam <code> getName() </code> metodi <span
+                    style="color: #e03e2d;">String </span>tipli nimadir return qiladi. Nima uchun String sababi name
+            bizda String tipli.
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <h2>Qanday ishlatish kerak.</h2>
+    <pre><code class="java" data-highlight="true">public class Main {
+
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setName("Ali"); // name o'zgaruvchisini 'Ali' qiymatini berish
+        person.setSurname("Aliyev"); // surname o'zgaruvchisiga 'Aliyev' qiymatini berish
+        person.setAge(22); // age qiymatiga 22 ni berish
+
+        System.out.println(person.getName()); // name o'zgaruvchisining qiymatini olish
+        System.out.println(person.getSurname()); // surname o'zgaruvchisini qiymatini olish
+        System.out.println(person.getAge()); // age o'zgaruvchisini qiymatini olish/
+    }
+ }
+</code></pre>
+    <p>Namunada Main classning main metodi orqali Person classini ishlatyapmiz. </p>
+    <p>Person class dan ob'ekt olindi va ob'ektni orqali set metodlari chaqirilib o'zgaruvchilarga qiymatlar
+        berildi.</p>
+    <p>Undan keyin shu ob'ekt orqali get metodlari chaqirilib o'zgaruvchilarning qiymatlari konsolga chiqarildi.</p>
+    <br>
+    <hr>
+    <h2>Afzalliklari</h2>
+    <p>Enkapsuliatsiyani bir nechta afzalliklari bor. Ular :</p>
+    <ul>
+        <li><strong>Ma'lumotni yashirish</strong>. User to'gridan to'gri o'zgaruvchilarga murojaat qila olmaydi. User
+            class dagi malumotlar qanday saqlanishini bilmaydi. <br>User biladiki set metodi orqali
+            qiymatni berib yuborsa va get metodi orqali qiymatni oladi. Class ichida qiymatlar qanday saqlanishini
+            bilmaydi. <br>Bu huddi televizorni pultiga o'xshaydi. Ovozini baland qilish tugmasini bosamiz ovoz baland
+            bo'ladi. Lekin tugma bosilganda televizorni ichida tranzistorlar ning qarshiliklari o'zgarishini User
+            bilishi kerak emas.<br>Userga u narsalarning qizig'i yo'q. User oddiy tugmani bossa bo'ldi.
+        </li>
+        <li><strong>Moslashuvchanlikni oshiradi</strong>. Biz classdagi o'zgaruvchilarni faqat o'qish uchun ochib
+            qo'yishimiz mumkin. Ya'ni faqat get metodini yaratib qo'yamiz va o'zgaruvchilarning qiymatini olish mumkin
+            halos. Bunda setter metod yaratmaymiz va o'zgaruvchilarning qiymatini o'zgartirib bo'lmaydi.
+        </li>
+        <li><strong>Nazaorat qilish uchun oson</strong>. Ya'ni o'zgaruvchining qiymati o'zgardimi yo'qmi shuni nazorat
+            qilishimiz mumkin. Bunda o'zgaruvchining qiymati o'zgarganini setter metodi orqali bilish mumkin.
+        </li>
+    </ul>
+
+    <h2>Hayotiy misollar</h2>
+    <p>Endi keling yana yaxshilab yanchib tashlaydigan darajada tushunishingiz uchun bir nechta hayotiy misollar orqali buni ko'rib chiqamiz.</p>
+    <p>Encapsulation ga erishish uchun maxsus getter va setter metodlari doimiy bor bo'lishi shart emas. Bunda 3 holatga e'tibor bering:</p>
+    <ul>
+        <li><strong>Read-Write: Getter + Setter</strong>. Bu eng ko'p uchraydigan holat. Siz ma’lumotni ham ko‘ra olasiz, ham uni xohlagan paytda yangilay olasiz.<br>
+            <span style="color: #2dc26b;">Telefoningizdagi budilnik vaqti:</span>  Hozir 5:00 ga qo'yilganligini ko'rib turibsiz (Get) va xohlasangiz uni 4:45 ga o'zgartirishingiz mumkin (Set)<br>
+            <span style="color: #2dc26b;">Xonadagi konditsioner harorati:</span>  Hozir necha gradusligini displeyda ko'rasiz (Get) va pult orqali uni o'zgartira olasiz (Set).<br>
+        </li>
+        <li><strong>Write-Only: Only Setter</strong>. Siz ma’lumotni tizimga kiritasiz, lekin tizim sizga kiritilgan ma’lumotni qayta ko‘rsatmaydi (xavfsizlik yoki mantiq yuzasidan).<br>
+            <span style="color: #2dc26b;">Bankomatdagi PIN-kod: </span> Siz PIN-kodni o'zgartirayotganingizda yangi kodni kiritasiz (Set), lekin ekran uni yulduzchalar qilib ko'rsatadi yoki umuman ko'rsatmaydi. Siz uni "o'qiy" olmaysiz.<br>
+            <span style="color: #2dc26b;">Xayriya qutisi: </span>  Masjid yoki biror joydagi ehson qutisiga pul tashlaysiz (Set). Ichida qancha pul borligini yoki siz tashlagan pul qayerda turganini ko'ra olmaysiz (Get yo'q).<br>
+        </li>
+        <li><strong>Read-Only: Only Getter</strong>. Bu shunday holatki, siz ma’lumotni ko‘ra olasiz, lekin uni aslo o‘zgartira olmaysiz. Tizim sizga faqat "o‘qish" huquqini beradi.<br>
+            <span style="color: #2dc26b;">Tug'ilgan kuningiz: </span>  Siz pasportingizda tug'ilgan kuningizni ko'rishingiz mumkin, lekin uni o'zgartirish (Set qilish) imkoniyati sizda yo'q.<br>
+            <span style="color: #2dc26b;">Chekdagi summa: </span>  Do'kondan xarid qilganingizda beriladigan chekdagi summa. Siz uni ko'rasiz, lekin chek bosilib chiqqandan keyin summani o'zgartira olmaysiz.<br>
+        </li>
+    </ul>
+    <br><br><br><br><br><br>
+</div>
+
+</body>
+</html>
+
+<script>
+    // first, find all the div.code blocks
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+            hljs.highlightAll(el);
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>

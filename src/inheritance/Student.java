@@ -22,4 +22,8 @@ public class Student extends Person{
     public void setLevel(Integer level) {
         this.level = level;
     }
+
+    public void test(){
+        System.out.println("test");
+    }
 }
