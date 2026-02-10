@@ -15,4 +15,8 @@ public class Vehicle {
         System.out.println("testing...");
     }
 
+    protected void test1(){
+        System.out.println("testing...");
+    }
+
 }
