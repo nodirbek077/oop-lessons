@@ -1,0 +1,29 @@
+1. Konseptual tushuncha (Static vs Dynamic)
+Avvalo, Java-da ikki turdagi bog‘lanish (binding) borligini ajratib olishimiz kerak:
+
+Static Binding (Static Dispatch): private, static va final metodlar uchun ishlatiladi. JVM qaysi metod chaqirilishini kompyatsiya paytida (compile-time) aniq biladi.
+
+Dynamic Binding (Dynamic Dispatch): Instance metodlar (overridden methods) uchun ishlatiladi. Bunda qaysi metod ishga tushishi obyektning haqiqiy tipiga (runtime type) bog‘liq bo‘ladi.
+
+2. vtable (Virtual Method Table) nima?
+JVM har bir klass yuklanganda (Class Loading faza), o‘sha klass uchun xotiraning Metaspace qismida bitta vtable (Virtual Method Table) yaratadi.
+
+vtable — bu klass tomonidan qo‘llab-quvvatlanadigan barcha virtual metodlarga ko‘rsatkichlar (pointers) massividir.
+
+3. vtable qanday ishlaydi? (Mexanizm)
+Tasavvur qiling, bizda Animal parent klass va Dog child klass bor:
+
+Merosxo‘rlik zanjiri: Dog klassi Animaldan voris olganda, u parentning vtable-sini nusxalab oladi.
+
+Overriding: Agar Dog klassi makeSound() metodini override qilsa, vtable-dagi o‘sha metod manzili Animal::makeSounddan Dog::makeSoundga yangilanadi.
+
+Indeksatsiya: vtable-dagi har bir metod o‘zgarmas indeksga ega bo‘ladi. Masalan, makeSound() har doim 5-indeksda tursa, barcha voris klasslarda ham u 5-indeksda qoladi.
+
+4. Runtime paytida nima sodir bo‘ladi?
+Siz kodda animal.makeSound() deb yozganingizda, JVM quyidagi 3 ta tezkor amalni bajaradi:
+
+Obyektning xotiradagi sarlavhasiga (Object Header) qarab, uning haqiqiy klass tipini topadi.
+
+O‘sha klassning vtable-siga murojaat qiladi.
+
+vtable-dan tegishli indeksdagi (masalan, 5-indeks) metod manzilini oladi va o‘sha manzilga "sakraydi" (jump).
