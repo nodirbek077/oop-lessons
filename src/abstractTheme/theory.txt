@@ -1,0 +1,4 @@
+polimorfizmni 2 xil ko'rinishi mavjud:
+
+1. Compile time polymorphism
+2. Run time polymorphism
