@@ -1,4 +1,4 @@
-package interfacetheme.asTemplate;
+package interfaces.asTemplate;
 
 public class SuperMan implements Worker{
     @Override

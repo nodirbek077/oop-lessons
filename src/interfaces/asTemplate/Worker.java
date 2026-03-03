@@ -1,4 +1,4 @@
-package interfacetheme;
+package interfaces.asTemplate;
 
 public interface Worker {
     void work();

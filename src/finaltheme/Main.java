@@ -1,7 +1,7 @@
 package finaltheme;
 
-import interfacetheme.Driver;
-import interfacetheme.Teacher;
+import interfaces.Driver;
+import interfaces.Teacher;
 
 public class Main {
     public static void main(String[] args) {

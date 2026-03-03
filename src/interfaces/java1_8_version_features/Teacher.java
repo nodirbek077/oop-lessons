@@ -1,13 +1,13 @@
-package interfacetheme.asTemplate;
+package interfaces.java1_8_version_features;
 
 public class Teacher implements Worker{
     @Override
     public void work() {
-        System.out.println("Teaching...");
+
     }
 
     @Override
     public void detail() {
-        System.out.println("I'm a teacher");
+
     }
 }

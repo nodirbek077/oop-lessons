@@ -1,4 +1,4 @@
-package interfacetheme;
+package interfaces;
 
 public class Driver implements Worker {
 

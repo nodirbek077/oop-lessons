@@ -1,4 +1,4 @@
-package interfacetheme.asTemplate;
+package interfaces.asTemplate;
 //oddiy class bn ko'p merosxo'rlikka erishib bo'lmaydi
 //public class Salesman extends Employee, SuperMan{
 //}

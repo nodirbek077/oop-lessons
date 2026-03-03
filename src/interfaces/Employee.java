@@ -1,4 +1,4 @@
-package interfacetheme;
+package interfaces;
 
 public abstract class Employee {
     public abstract void getSalary();

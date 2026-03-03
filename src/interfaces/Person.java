@@ -1,4 +1,4 @@
-package interfacetheme;
+package interfaces;
 
 public class Person extends Employee{
     @Override
