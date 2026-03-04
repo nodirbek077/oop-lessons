@@ -1,5 +1,8 @@
 package interfaces.java1_8_version_features;
 
+/**
+ * 2
+ */
 public class Main {
     public static void main(String[] args) {
         Teacher teacher = new Teacher();

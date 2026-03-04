@@ -1,7 +1,7 @@
 package interfaces.java1_8_version_features;
 
 /**
- * From java 1.8 version, added default and static methods added
+ * From java 1.8 version, default and static methods added
  */
 //javaning 1.8 versiyasidan boshlab dasturchilar interfacelarga default methodlarni qo'shishgan
 //Sababi masalan Worker degan interfaceimizda 1000 ta class implement olgan bo'lsa va bizga qandaydur test() degan method kerak bo'lib qolsa

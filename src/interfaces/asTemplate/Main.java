@@ -1,5 +1,8 @@
 package interfaces.asTemplate;
 
+/**
+ * 1
+ */
 public class Main {
 
     //1. interface ni class shabloni sifatida ishlatsa bo'ladi
